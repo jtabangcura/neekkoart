@@ -1,0 +1,119 @@
+#header {
+  position: fixed; right: 0; font-size: 1.5em; z-index: 100;
+  .back, .trigger {
+    float: right; margin: 15px 24px 0 0; padding: 6px 10px; background: rgba(255,255,255,.4); color: @black; font-size: 0.6em; cursor: pointer; z-index: 2;
+    @br: 3px; -webkit-border-radius: @br; -moz-border-radius: @br; -o-border-radius: @br; border-radius: @br;
+    &:hover, &:active {background: rgba(34,34,34,.95); color: #fff;}
+  }
+  .back {right: 45px; padding: 6px 11px;}
+  .close-menu {display: none;}
+  &.opened {
+    width: 100%;
+    .trigger, .back {background: transparent; color: #fff;}
+    .open-menu {display: none;}
+    .close-menu {display: block;}
+    .menu {width: 100%;}
+  }
+  .menu {
+    top: 0; right: 0; width: 0; z-index: 1; overflow: hidden;
+    ul {margin: 0; padding: 60px 0 30px 0; background: rgba(34,34,34,.95); font-weight: @bold; text-transform: uppercase;}
+    li {
+      text-indent: 0;
+      a {
+        display: block; padding: 10px 30px; line-height: 1em; letter-spacing: 0.1em; text-decoration: none; border: 0!important; text-shadow: 2px 4px 0 @black;
+      }
+      &.sm {
+        a {
+          display: inline-block; padding: 5px; font-size: .7em;
+          &:nth-child(7n+1) {
+            @c: @c2;
+            color: @c;
+            &:hover, &:active {background: @c; color: @black; text-shadow: 2px 4px 0 rgba(34,34,34,.3);}
+          }
+          &:nth-child(7n+2) {
+            @c: @c3;
+            color: @c;
+            &:hover, &:active {background: @c; color: #fff;}
+          }
+          &:nth-child(7n+3) {
+            @c: @c4;
+            color: @c;
+            &:hover, &:active {background: @c; color: #fff;}
+          }
+          &:nth-child(7n+4) {
+            @c: @c5;
+            color: @c;
+            &:hover, &:active {background: @c; color: #fff;}
+          }
+          &:nth-child(7n+5) {
+            @c: @c6;
+            color: @c;
+            &:hover, &:active {background: @c; color: #fff;}
+          }
+          &:nth-child(7n+6) {
+            @c: @c7;
+            color: @c;
+            &:hover, &:active {background: @c; color: #fff;}
+          }
+          &:nth-child(7n+7) {
+            @c: @c1;
+            color: @c;
+            &:hover, &:active {background: @c; color: @black; text-shadow: 2px 4px 0 rgba(34,34,34,.3);}
+          }
+        }
+      }
+      &:before {display: none;}
+      &:last-child {margin-right: 30px;}
+      &:nth-child(7n+1) {
+        @c: @c2;
+        a {
+          color: @c;
+          &:hover, &:active {background: @c; color: @black; text-shadow: 2px 4px 0 rgba(34,34,34,.3);}
+        }
+      }
+      &:nth-child(7n+2) {
+        @c: @c3;
+        a {
+          color: @c;
+          &:hover, &:active {background: @c; color: #fff;}
+        }
+      }
+      &:nth-child(7n+3) {
+        @c: @c4;
+        a {
+          color: @c;
+          &:hover, &:active {background: @c; color: #fff;}
+        }
+      }
+      &:nth-child(7n+4) {
+        @c: @c5;
+        a {
+          color: @c;
+          &:hover, &:active {background: @c; color: #fff;}
+        }
+      }
+      &:nth-child(7n+5) {
+        @c: @c6;
+        a {
+          color: @c;
+          &:hover, &:active {background: @c; color: #fff;}
+        }
+      }
+      &:nth-child(7n+6) {
+        @c: @c7;
+        a {
+          color: @c;
+          &:hover, &:active {background: @c; color: #fff;}
+        }
+      }
+      &:nth-child(7n+7) {
+        @c: @c1;
+        a {
+          color: @c;
+          &:hover, &:active {background: @c; color: @black; text-shadow: 2px 4px 0 rgba(34,34,34,.3);}
+        }
+      }
+    }
+  }
+}
+.single-post #header .back {display: block;}

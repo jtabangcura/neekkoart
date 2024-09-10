@@ -1,0 +1,16 @@
+[06-Nov-2021 09:01:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/dluggon/public_html/neekko.art/wp-content/themes/neekkoart/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home4/dluggon/public_html/neekko.art/wp-content/themes/neekkoart/index.php on line 1
+[06-Nov-2021 09:01:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/dluggon/public_html/neekko.art/wp-content/themes/neekkoart/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home4/dluggon/public_html/neekko.art/wp-content/themes/neekkoart/404.php on line 1
+[06-Nov-2021 09:01:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home4/dluggon/public_html/neekko.art/wp-content/themes/neekkoart/header.php:2
+Stack trace:
+#0 {main}
+  thrown in /home4/dluggon/public_html/neekko.art/wp-content/themes/neekkoart/header.php on line 2
+[06-Nov-2021 09:01:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/dluggon/public_html/neekko.art/wp-content/themes/neekkoart/archive.php:1
+Stack trace:
+#0 {main}
+  thrown in /home4/dluggon/public_html/neekko.art/wp-content/themes/neekkoart/archive.php on line 1

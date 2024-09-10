@@ -1,0 +1,76 @@
+#ml {
+	@btn: 96px;
+	width: 315px; height: 48px; background: #fff; line-height: 48px; -webkit-border-radius: 24px; -moz-border-radius: 24px; -o-border-radius: 24px; border-radius: 24px; white-space: nowrap; overflow: hidden;
+	input, button {display: inline-block; padding: 0;}
+	input[type=email] {width: calc(100% - @btn - 4px); padding: 0 15px; background: transparent; border: 0;}
+	button[type=submit] {
+		width: @btn; background: transparent; color: @liteBlue; font-weight: @bold; border: 0; text-align: center;
+		&:hover, &:active {color: @yellow;}
+	}
+	@media (max-width: 550px) {
+		width: 250px; height: 38px; line-height: 38px;
+	}
+}
+
+.gform_wrapper {
+	margin: 0 0 0 0; padding: 0 0 0 0; max-width: 558px!important;
+	ul {margin: 0!important; padding: 0!important;}
+	li {
+		margin: 0!important; padding: 0; text-indent: 0;
+		&:before {display: none;}
+	}
+	@inputShadow: inset 0 0 7px rgba(0,0,0,0.25);
+	li.gfield, div.field {
+		position: relative; float: left; margin: 0; padding: 4px!important; width: 50%; overflow: hidden; clear: none!important;
+		input, textarea {
+			position: relative; display: block; margin: 0; padding: 10px 21px!important; width: 100%!important; background: #fff; color: @textGray; font-size: 0.857em!important; border: 0; -webkit-box-shadow: @inputShadow; -ms-box-shadow: @inputShadow; -o-box-shadow: @inputShadow; box-shadow: @inputShadow;
+			@placeholder: @textGray; 
+			&::-webkit-input-placeholder {color: @placeholder; letter-spacing: 0.1em; text-transform: uppercase;}
+			&:-ms-input-placeholder {color: @placeholder; letter-spacing: 0.1em; text-transform: uppercase;}
+			&::-moz-placeholder {color: @placeholder; letter-spacing: 0.1em; text-transform: uppercase; opacity: 1;}
+			&:-moz-placeholder {color: @placeholder; letter-spacing: 0.1em; text-transform: uppercase; opacity: 1;}
+			&:focus {
+				color: @textGray;
+				&::-webkit-input-placeholder {color: transparent;}
+				&:-ms-input-placeholder {color: transparent;}
+				&::-moz-placeholder {color: transparent;}
+				&:-moz-placeholder {color: transparent;}
+			}
+		}
+		.ginput_container {margin: 0!important;}
+		&.wide {float: none; padding: 12px 0 0 0; width: 100%; clear: both;}
+		> label {position: absolute; top: 0; left: 0; width: 0; height: 0; font-size: 0!important; line-height: 0!important;}
+		&.filled label {font-size: 0.857em;}
+		.ginput_container_checkbox {
+			input {display: none!important;}
+			label {
+				position: relative; display: block; margin-top: 3px; padding: 10px 0 10px 35px; min-height: 35px; font-size: 0.857em!important; font-weight: @regular!important; line-height: 1.20em!important;
+				&:before {position: absolute; display: block; content: ' '; top: 50%; left: 0; margin-top: -12px; width: 24px; height: 24px; background: @paleGray; font-size: 0; line-height: 0; -webkit-border-radius: 100%; -moz-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; -webkit-box-shadow: @inputShadow; -ms-box-shadow: @inputShadow; -o-box-shadow: @inputShadow; box-shadow: @inputShadow; cursor: pointer;}
+				&:after {position: absolute; display: block; content: ' '; top: 50%; left: 5px; width: 14px; height: 14px; margin-top: -7px; background: transparent; font-size: 0; line-height: 0; -webkit-border-radius: 100%; -moz-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; cursor: pointer;}
+			}
+		}
+	}
+	.gform_footer {
+		margin: 0!important; padding: 0!important; text-align: right;
+		input {display: inline-block; margin: 30px 0 0 0!important; padding: 8px 21px!important; width: auto!important;}
+	}
+	@media (max-width: 991px) {
+		padding: 0;
+		li.gfield, div.field {
+			float: none; padding-right: 0!important; padding-left: 0; width: 100%;
+		}
+		.validation_message {text-align: center;}
+		.gform_footer {text-align: left;}
+	}
+}
+.gform_wrapper ul.gfield_checkbox li input[type=checkbox]:checked+label, .gform_wrapper ul.gfield_radio li input[type=radio]:checked+label {
+	&:after {background: @yellow;}
+}
+body.home {
+	.gform_wrapper {
+		@media (max-width: 991px) {
+			color: #fff;
+			.ginput_container_checkbox label {font-weight: @medium!important; text-shadow: 0 0 5px @darkBlue;}
+		}
+	}
+}

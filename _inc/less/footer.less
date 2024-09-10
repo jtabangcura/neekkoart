@@ -1,0 +1,54 @@
+#footer {
+	.shape {
+		top: -80px; background: none; z-index: 5;
+		svg path {fill: @darkBlue;}
+	}
+	padding: 18px 0 140px 0; background: @darkBlue;
+	p, h6 {color: #fff;}
+	p {font-size: 0.909em;}
+	h6 {margin: 0 0 3px 0; font-size: 1.727em; font-weight: @bold;}
+	.left {
+		.logo {margin: 0 0 34px 0; max-width: 196px;}
+		p {color: rgba(255,255,255,.45); font-size: 0.818em; font-weight: @medium;}
+	}
+	.center {
+		padding-right: 30px;
+		#sm {
+			margin: 40px 0 0 0;
+			li {
+				display: inline-block;
+				a {
+					display: block; width: 23px; height: 23px; color: @liteBlue; line-height: 23px; text-align: center;
+					&:hover, &:active {color: @yellow;}
+					.label {font-size: 0;}
+					@media (max-width: 550px) {
+						width: 19px; height: 19px; line-height: 19px
+					}
+				}
+			}
+		}
+	}
+	.right {
+		#ml {margin: 0 0 0 0;}
+	}
+	.foot-nav {
+		a {font-size: 1.5em!important;}
+	}
+	@media (max-width: 991px) {
+		padding: 0 0 50px 0; text-align: center;
+		.left,.center, .right {float: none; padding: 25px 0; width: 100%;}
+		.left .logo {display: inline-block;}
+		.center {padding: 0;}
+		.right #ml {margin-right: auto; margin-left: auto;}
+	}
+	@media (max-width: 550px) {
+		h6 {margin: 0 0 6px 0; font-size: 1.333em;}
+		.left,.center, .right {padding: 0 0 27px 0;}
+		.left {
+			.logo {margin: 0 0 12px 0; max-width: 127px;}
+			p {font-size: 0.889em;}
+		}
+		.center #sm {margin: 17px 0 0 0;}
+		.right #ml {margin-top: 0;}
+	}
+}
